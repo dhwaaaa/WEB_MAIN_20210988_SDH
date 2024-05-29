@@ -12,11 +12,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/basic_js_test.js" defer></script>
         <script type="text/javascript" src="js/search.js" defer></script>
+        <script type="text/javascript" src="js/data_type.js" defer></script>
+        <script type="text/javascript" src="js/pop_up.js" defer></script>
     </head>
 
-    <body style="background-color: black;">
+    <body style="background-color: black;" onload="pop_up();">
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="image/LOGO.png" alt="Logo" width="90" height="72" class="d-inline-block align-text-top" onmouseover="over(this)" onmouseout="out(this)">
+              </a>
               <a class="navbar-brand" href="#">게임정보</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,9 +45,9 @@
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="키워드 입력" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" id="search_button_msg">검 색</button>
+                <form class="d-flex" role="search" onsubmit="return googleSearch();">
+                  <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="키워드 입력" aria-label="Search">
+                  <button class="btn btn-outline-success" id="search_button_msg" type="submit">검색하기</button>
                 </form>
               </div>
             </div>
