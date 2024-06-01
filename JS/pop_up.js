@@ -1,3 +1,11 @@
+const over = (obj) => {
+    obj.src="image/LOGO.png";
+    };
+
+const out = (obj) => {
+    obj.src="image/LOGO_2.png";
+    };
+
 function pop_up() {
     window.open("../popup/popup.html", "팝업테스트", "width=400, height=300, top=10, left=10");
     }
@@ -24,10 +32,3 @@ function show_clock()
     }
     setTimeout(show_clock, 1000); //1초마다 갱신
 }
-
-function over(obj) {
-    obj.src="image/LOGO.png";
-    }
-    function out(obj) {
-    obj.src="image/LOGO_2.png";
-    }
