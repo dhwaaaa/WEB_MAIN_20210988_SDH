@@ -38,13 +38,25 @@ const check_input = ()  => {
         return false;
     }
 
+    const duplication_str = emailValue.match(/[a-zA-Z]{3}/) !== null;
+
+    if(duplication){
+        alert('3글자 이상 반복입력할 수 없습니다.')
+        return false;
+    }
+
     if (emailValue.length < 5){
         alert('아이디는 최소 5글자 이상 입력해야 합니다.');
         return false;
     }
 
-    if (passwordValue.length < 12){
-        alert('비밀번호는 반드시 12글자 이상 입력해야 합니다.');
+    if (emailValue.length > 10){
+        alert('아이디는 10글자를 넘길 수 없습니다.');
+        return false;
+    }
+
+    if (passwordValue.length < 12 || passwordValue.length > 15){
+        alert('비밀번호는 반드시 12글자 이상, 15글자 이하로 입력해야 합니다.');
         return false;
     }
 
@@ -56,6 +68,7 @@ const check_input = ()  => {
 
     const hasUpperCase = passwordValue.match(/[A-Z]+/) !== null;
     const hasLowerCase = passwordValue.match(/[a-z]+/) !== null;
+    
     if(!hasUpperCase || !hasLowerCase){
         alert('패스워드는 대소문자를 1개 이상 포함해야 합니다.');
         return false;
