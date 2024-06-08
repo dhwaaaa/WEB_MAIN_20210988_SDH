@@ -67,4 +67,13 @@ function session_join_set(){ //세션 저장(객체)
     } else {
         alert("세션 스토리지 지원 x");
     }
+}
+
+function session_join_get(){
+    if (sessionStorage) {
+        return console.log(sessionStorage.getItem("Session_Storage_new_user"));
     }
+    else {
+        alert("세션 스토리지 지원 x");
+    }
+}
