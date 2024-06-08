@@ -17,3 +17,4 @@
 12주차 Part.1 완료 <br/>
 12주차 Part.1 응용문제 완료 <br/>
 12주차 Part.2 완료 <br/>
+12주차 Part.2 연습문제완료 (auto_logout.js파일 추가) <br/>
