@@ -162,4 +162,7 @@ function init(){ // 로그인 폼에 쿠키에서 가져온 아이디 입력
     session_check();
 }
 
+init()
+
+
 document.getElementById("login_btn").addEventListener('click', check_input);
