@@ -19,4 +19,5 @@
 12주차 Part.2 완료 <br/>
 12주차 Part.2 연습문제완료 (auto_logout.js파일 추가) <br/>
 14주차 완료 <br/>
-14주차 응용문제 완료 (session_join_get()함수 구현)<br/>
+14주차 응용문제 완료 (session_join_get()함수 구현) <br/>
+X주차 완료 <br/>
